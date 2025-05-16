@@ -5,60 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HIMASCIDA | Link in Bio</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1046/1046876.png" />
-
   <style>
-body {
-  margin: 0;
-  font-family: 'Roboto', sans-serif;
-  background-color: #fff;
-  color: #111;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem;
-  background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
-  background-repeat: repeat;
-}
-
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('be6ae27b-eb65-4417-8a07-cc08e572a83e.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
 
     .profile {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
+      background-color: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      padding: 1.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      max-width: 600px;
+      width: 100%;
+    }
 
-.profile-card {
-  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Chinese_pattern.svg/1200px-Chinese_pattern.svg.png') center/cover no-repeat;
-  background-color: #fff5f5;
-  border: 2px solid #e03c20;
-  border-radius: 16px;
-  padding: 2rem;
-  max-width: 600px;
-  box-shadow: 0 0 10px rgba(224, 60, 32, 0.2);
-  text-align: center;
-  position: relative;
-}
+    .name {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #e03c20;
+    }
 
-.name {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #e03c20;
-  margin-bottom: 0.5rem;
-}
+    .bio {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
 
-.bio {
-  font-size: 1rem;
-  color: #333;
-}
-
-.bio-cn {
-  font-family: 'Noto Sans SC', sans-serif;
-  font-size: 1.2rem;
-  color: #b22222;
-  margin-top: 0.5rem;
-}
+    .bio-cn {
+      font-family: 'Noto Sans SC', sans-serif;
+      font-size: 1.1rem;
+      color: #444;
+      margin-top: 0.2rem;
     }
 
     .links {
@@ -77,29 +63,18 @@ body {
       border-radius: 12px;
       text-align: center;
       font-weight: bold;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: all 0.3s ease;
+      transition: background-color 0.3s ease;
     }
 
     .link:hover {
-      background-color: #b52d16;
-      transform: translateY(-2px);
+      background-color: #c7371e;
     }
 
     .footer {
-      margin-top: 3rem;
+      margin-top: 2rem;
       font-size: 0.8rem;
-      color: #888;
-    }
-
-    @media (max-width: 500px) {
-      .name {
-        font-size: 1.5rem;
-      }
-
-      .bio, .bio-cn {
-        font-size: 0.9rem;
-      }
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
     }
   </style>
 </head>
