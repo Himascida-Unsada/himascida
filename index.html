@@ -4,91 +4,105 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HIMASCIDA</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    /* Base page styling */
     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
       margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background: url('https://images.unsplash.com/photo-1511742914935-c243f69d24a4?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
-      background-size: cover;
-      color: #111;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       padding: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
 
+    /* Centered container */
     .card {
       background: white;
+      border-radius: 20px;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
       padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-      max-width: 600px;
+      max-width: 480px;
       width: 100%;
       text-align: center;
     }
 
-    h1 {
+    .card h1 {
       color: #e53935;
       margin-bottom: 0.5rem;
     }
 
-    .subtitle {
-      margin-bottom: 0.5rem;
+    .card p {
+      color: #333;
+      margin: 0.25rem 0;
     }
 
-    .button-container {
+    .subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Links layout */
+    .links {
       display: flex;
       flex-direction: column;
-      align-items: center;
       gap: 1rem;
-      margin-top: 2rem;
     }
 
-    .button-container a {
-      display: inline-block;
+    .link {
       background-color: #e53935;
       color: white;
       text-decoration: none;
-      padding: 0.75rem 1.5rem;
+      padding: 0.8rem 1.5rem;
       border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      font-weight: 600;
       transition: background-color 0.3s ease;
-      font-weight: bold;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    .button-container a:hover {
-      background-color: #d32f2f;
+    .link:hover {
+      background-color: #c62828;
     }
 
-    footer {
+    /* Footer */
+    .footer {
       margin-top: 2rem;
-      color: #eee;
-      font-size: 0.9rem;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Mobile optimization */
+    @media (max-width: 500px) {
+      .card {
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <div class="card">
     <h1>HIMASCIDA</h1>
-    <p class="subtitle">Akun Resmi Himpunan Mahasiswa Bahasa Mandarin & Kebudayaan Tiongkok</p>
-    <p class="subtitle">Universitas Darma Persada</p>
+    <p>Akun Resmi Himpunan Mahasiswa Bahasa Mandarin & Kebudayaan Tiongkok</p>
+    <p>Universitas Darma Persada</p>
     <p class="subtitle">博修达大学 - 中文系</p>
 
-    <div class="button-container">
-      <a href="https://unsada.ac.id/" target="_blank">🌐 Universitas Darma Persada</a>
-      <a href="https://unsada.ac.id/akademik/program-studi/" target="_blank">📘 Informasi Jurusan</a>
-      <a href="https://ftbaa.unsada.ac.id/program-studi/bahasa-dan-kebudayaan-tiongkok/" target="_blank">🏛️ Website Prodi</a>
-      <a href="https://www.instagram.com/bmkt_unsada/" target="_blank">📸 Instagram BMKT</a>
-      <a href="https://www.instagram.com/himascida/" target="_blank">📷 Instagram HIMASCIDA</a>
-      <a href="https://www.tiktok.com/@bmkt_unsada" target="_blank">🎬 TikTok BMKT</a>
-      <a href="https://wa.me/6281213708389" target="_blank">📞 Contact Person: +62 812-1370-8389</a>
-      <a href="mailto:himascida.unsada@gmail.com" target="_blank">📧 Kirim Email ke HIMASCIDA</a>
+    <div class="links">
+      <a class="link" href="https://unsada.ac.id/" target="_blank" rel="noopener noreferrer">🌐 Universitas Darma Persada</a>
+      <a class="link" href="https://drive.google.com/file/d/1vd03iBlSb1UGzrr3MH0y9VNAZBYGunDs/view?usp=drive_link" target="_blank" rel="noopener noreferrer">📘 Informasi Jurusan</a>
+      <a class="link" href="https://mandarin.unsada.ac.id/" target="_blank" rel="noopener noreferrer">🏛️ Website Prodi</a>
+      <a class="link" href="https://www.instagram.com/bmkt.unsada/" target="_blank" rel="noopener noreferrer">📷 Instagram BMKT</a>
+      <a class="link" href="https://www.instagram.com/himascida/" target="_blank" rel="noopener noreferrer">📷 Instagram HIMASCIDA</a>
+      <a class="link" href="https://www.tiktok.com/@bambuti_unsada" target="_blank" rel="noopener noreferrer">🎥 TikTok BMKT</a>
+      <a class="link" href="https://wa.me/6281213708389" target="_blank" rel="noopener noreferrer">📞 Contact Person: +62 812-1370-8389</a>
+      <a class="link" href="https://mail.google.com/mail/?view=cm&to=himascidaunsada@gmail.com&su=Halo%20HIMASCIDA&body=Halo%20kami%20ingin%20bertanya%20tentang%20program%20di%20BMKT." target="_blank" rel="noopener noreferrer">✉️ Kirim Email ke HIMASCIDA</a>
+    </div>
+
+    <div class="footer">
+      HIMASCIDA — BMKT — Universitas Darma Persada
     </div>
   </div>
-
-  <footer>
-    HIMASCIDA — BMKT — Universitas Darma Persada
-  </footer>
 </body>
 </html>
