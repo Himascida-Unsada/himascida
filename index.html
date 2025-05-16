@@ -1,50 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HIMASCIDA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HIMASCIDA | Link in Bio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&family=Roboto&display=swap" rel="stylesheet">
   <style>
-    /* Base page styling */
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #f5f7fa, #c3cfe2);
       margin: 0;
-      padding: 2rem;
+      font-family: 'Roboto', sans-serif;
+      background: url('https://images.unsplash.com/photo-1511742914935-c243f69d24a4?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #111;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      min-height: 100vh;
-    }
-
-    /* Centered container */
-    .card {
-      background: white;
-      border-radius: 20px;
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
       padding: 2rem;
-      max-width: 480px;
+      position: relative;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.92);
+      padding: 2rem;
+      border-radius: 16px;
+      max-width: 500px;
       width: 100%;
-      text-align: center;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
     }
 
-    .card h1 {
-      color: #e53935;
-      margin-bottom: 0.5rem;
-    }
-
-    .card p {
-      color: #333;
-      margin: 0.25rem 0;
-    }
-
-    .subtitle {
-      font-size: 14px;
-      color: #666;
+    .banner {
+      width: 100%;
+      max-width: 500px;
       margin-bottom: 1.5rem;
     }
 
-    /* Links layout */
+    .banner img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .name {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #e03c20;
+    }
+
+    .bio, .bio-cn {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .bio-cn {
+      font-family: 'Noto Sans SC', sans-serif;
+      color: #444;
+    }
+
     .links {
       display: flex;
       flex-direction: column;
@@ -52,42 +68,60 @@
     }
 
     .link {
-      background-color: #e53935;
+      background-color: #e03c20;
       color: white;
       text-decoration: none;
-      padding: 0.8rem 1.5rem;
+      padding: 1rem;
       border-radius: 12px;
-      font-weight: 600;
-      transition: background-color 0.3s ease;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+      width: 100%;
     }
 
     .link:hover {
-      background-color: #c62828;
+      background-color: #c7371e;
     }
 
-    /* Footer */
     .footer {
       margin-top: 2rem;
-      font-size: 14px;
-      color: #555;
+      font-size: 0.8rem;
+      color: #666;
+      text-align: center;
     }
 
-    /* Mobile optimization */
-    @media (max-width: 500px) {
-      .card {
-        padding: 1.5rem;
-      }
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+    }
+
+    .whatsapp-float i {
+      margin-top: 16px;
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-  <div class="card">
-    <h1>HIMASCIDA</h1>
-    <p>Akun Resmi Himpunan Mahasiswa Bahasa Mandarin & Kebudayaan Tiongkok</p>
-    <p>Universitas Darma Persada</p>
-    <p class="subtitle">博修达大学 - 中文系</p>
+  <div class="banner">
+    <img src="https://i.imgur.com/zEtECyk.png" alt="HIMASCIDA Banner">
+  </div>
+
+  <div class="container">
+    <div class="profile">
+      <div class="name">HIMASCIDA</div>
+      <div class="bio">Akun Resmi Himpunan Mahasiswa Bahasa Mandarin & Kebudayaan Tiongkok Universitas Darma Persada.</div>
+      <div class="bio-cn">博修达大学 - 中文系</div>
+    </div>
 
     <div class="links">
       <a class="link" href="https://unsada.ac.id/" target="_blank" rel="noopener noreferrer">🌐 Universitas Darma Persada</a>
@@ -100,9 +134,11 @@
       <a class="link" href="https://mail.google.com/mail/?view=cm&to=himascidaunsada@gmail.com&su=Halo%20HIMASCIDA&body=Halo%20kami%20ingin%20bertanya%20tentang%20program%20di%20BMKT." target="_blank" rel="noopener noreferrer">✉️ Kirim Email ke HIMASCIDA</a>
     </div>
 
-    <div class="footer">
-      HIMASCIDA — BMKT — Universitas Darma Persada
-    </div>
+    <div class="footer">© 2025 HIMASCIDA — Universitas Darma Persada</div>
   </div>
+
+  <a href="https://wa.me/6281213708389" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 </body>
 </html>
