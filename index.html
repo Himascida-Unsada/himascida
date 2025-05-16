@@ -25,27 +25,42 @@
     }
 
     .profile {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
 
-    .name {
-      font-size: 2rem;
-      font-weight: bold;
-      color: #e03c20;
-    }
+.profile-card {
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Chinese_pattern.svg/1200px-Chinese_pattern.svg.png') center/cover no-repeat;
+  background-color: #fff5f5;
+  border: 2px solid #e03c20;
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(224, 60, 32, 0.2);
+  text-align: center;
+  position: relative;
+}
 
-    .bio {
-      font-size: 1rem;
-      margin-top: 0.5rem;
-      max-width: 600px;
-    }
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #e03c20;
+  margin-bottom: 0.5rem;
+}
 
-    .bio-cn {
-      font-family: 'Noto Sans SC', sans-serif;
-      font-size: 1rem;
-      color: #444;
-      margin-top: 0.3rem;
+.bio {
+  font-size: 1rem;
+  color: #333;
+}
+
+.bio-cn {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 1.2rem;
+  color: #b22222;
+  margin-top: 0.5rem;
+}
     }
 
     .links {
