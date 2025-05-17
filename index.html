@@ -1,72 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HIMASCIDA - Universitas Darma Persada</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HIMASCIDA | Link in Bio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&family=Roboto&display=swap" rel="stylesheet">
   <style>
-    /* General body styles */
     body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      background-color: #fff;
-      color: #333;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: url('https://raw.githubusercontent.com/Nulswar/himascida/main/Template_IG.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
     }
 
-    /* Improved heading styles for contrast */
-    h1, h2, h3 {
-      color: #ffffff; /* White text */
-      background-color: #003366; /* Dark blue background */
-      padding: 10px 15px;
-      border-radius: 6px;
+    .profile {
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      max-width: 500px;
+    }
+
+    .name {
+      font-size: 2rem;
       font-weight: bold;
-      margin-top: 30px;
-      margin-bottom: 15px;
-      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+      color: #e03c20;
     }
 
-    /* Optional: style links inside sections */
-    a {
-      color: #003366;
+    .bio, .bio-cn {
+      font-size: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .bio-cn {
+      font-family: 'Noto Sans SC', sans-serif;
+      color: #444;
+    }
+
+    .links {
+      width: 100%;
+      max-width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .link {
+      background-color: #e03c20;
+      color: white;
       text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Container for content */
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
 
-    /* Section style */
-    section {
-      margin-bottom: 40px;
+    .link:hover {
+      background-color: #c7371e;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #888;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Universitas Darma Persada</h1>
-    </header>
-
-    <section id="informasi-jurusan">
-      <h2>Informasi Jurusan</h2>
-      <p>Informasi lengkap tentang jurusan yang tersedia di Universitas Darma Persada.</p>
-    </section>
-
-    <section id="kontak">
-      <h2>Kontak</h2>
-      <p>Email: info@udp.ac.id</p>
-      <p>Telepon: (021) 123-4567</p>
-    </section>
-
-    <section id="lainnya">
-      <h3>Informasi Lainnya</h3>
-      <p>Informasi tambahan terkait kegiatan dan acara di universitas.</p>
-    </section>
+  <div class="profile">
+    <div class="name">HIMASCIDA</div>
+    <div class="bio">Akun Resmi Himpunan Mahasiswa Bahasa Mandarin & Kebudayaan Tiongkok Universitas Darma Persada.</div>
+    <div class="bio-cn">博修达大学 - 中文系</div>
   </div>
+
+  <div class="links">
+    <a class="link" href="https://unsada.ac.id/" target="_blank" rel="noopener noreferrer">🌐 Universitas Darma Persada</a>
+    <a class="link" href="https://drive.google.com/file/d/1vd03iBlSb1UGzrr3MH0y9VNAZBYGunDs/view?usp=drive_link" target="_blank" rel="noopener noreferrer">📘 Informasi Jurusan</a>
+    <a class="link" href="https://mandarin.unsada.ac.id/" target="_blank" rel="noopener noreferrer">🏛️ Website Prodi</a>
+    <a class="link" href="https://www.instagram.com/bmkt.unsada/" target="_blank" rel="noopener noreferrer">📷 Instagram BMKT</a>
+    <a class="link" href="https://www.instagram.com/himascida/" target="_blank" rel="noopener noreferrer">📷 Instagram HIMASCIDA</a>
+    <a class="link" href="https://www.tiktok.com/@bambuti_unsada" target="_blank" rel="noopener noreferrer">🎥 TikTok BMKT</a>
+    <a class="link" href="https://wa.me/6281213708389" target="_blank" rel="noopener noreferrer">📞 Contact Person: +62 812-1370-8389</a>
+    <a class="link" href="https://mail.google.com/mail/?view=cm&to=himascidaunsada@gmail.com&su=Halo%20HIMASCIDA&body=Halo%20kami%20ingin%20bertanya%20tentang%20program%20di%20BMKT." target="_blank" rel="noopener noreferrer">✉️ Kirim Email ke HIMASCIDA</a>
+  </div>
+
+  <a href="https://wa.me/6281213708389" class="whatsapp-float" target="_blank" rel="noopener noreferrer">📱</a>
+
+  <div class="footer">© 2025 HIMASCIDA — Universitas Darma Persada</div>
 </body>
 </html>
